@@ -119,7 +119,7 @@ let correctAnswer = null;
 //CONSTANTS
 const SCORE_MARK = 1;
 const MAXIMUM_QUESTION = 10;
-//get 15minutes in seconds;
+//get 10minutes in seconds;
 const TIME_DURATION = 600;
 
 //add timer to the quiz
