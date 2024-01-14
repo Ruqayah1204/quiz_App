@@ -307,5 +307,5 @@ function retryQuiz(){
 
 function exitQuiz(){
     //Redirect page to the index.html page
-    window.location.assign('/../html/index.html');
+    window.location.assign('/index.html');
 }
