@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start Quiz - Goodluck!</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="quiz.css">
+
+</head>
+<body>
+    <main class="innerContainer">
+        <div id="quiz" class="quizContainer">
+            <div class="quizFlex">
+                <h1 class="headerText">Frontend Quiz App</h1>
+                <p class="timer">Time Left:
+                    <span id="timer" class="counter"></span>
+                </p>
+            </div>
+            <!--Question here-->
+            <div id="quizID">
+                <h2 id="question" class="question"></h2>
+                <div class="choice">
+                    <p class="options" data-number="1">Option 1</p>
+                </div>
+
+                <div class="choice">
+                    <p class="options" data-number="2">Option 2</p>
+                </div>
+
+                <div class="choice">
+                    <p class="options" data-number="3">Option 3</p>
+                </div>
+
+                <div class="choice">
+                    <p class="options" data-number="4">Option 4</p>
+                </div>
+            </div>
+
+            <footer class="submitFlex">
+                <p id="numberQuestion"></p>
+                <button id="nextBtn">Next</button>
+            </footer>
+        </div>
+
+        <!--result section -->
+        <div id="result" class="result-box">
+            <div class="icon">
+                <img src="./assets/trophy.jpg" alt="quiz award">
+            </div>
+            <div id="scoreText"></div>
+            <div id="resultButton">
+            </div>
+        </div>
+    </main>
+    <script src="quiz.js"></script>
+</body>
+</html>

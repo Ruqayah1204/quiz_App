@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Master - Quiz App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="quiz.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="innerContainer">
+        <h1 class="header">QuizMaster</h1>
+        <nav>
+            <ul>
+                <li><a id="openButton" href="#">Read Instructions</a></li>
+                <li><a href="#">Get Started</a></li>
+            </ul>
+            <button class="navBtn">Sign Up</button>
+        </nav>
+    </header>
+    <div class="innerContainer container">
+        <div class="intro">
+            <h2>Unleash Your Inner Wizard of Wizdom</h2>
+            <p>Learn new concepts for each questions</p>
+            <a href="/quiz.html" id="startQuiz" class="btn">Start Quiz</a>
+            <button id="openModalButton" class="instructionBtn btn">Read Instructions</button>
+        </div>
+        
+        <div class="introImg">
+            <img src="./assets/hero.png" alt="hero section image" width="630px">
+        </div>
+    </div>
+    <div id="modal" class="modal">
+        <div id="modalContent" class="modalContent">
+            <h1>Instruction for taking the Quiz</h1>
+            <ol>
+                <li>Read each question carefully and choose the best 
+                answer to each one. Once finished, you can 
+                check each question to see why answer selected 
+                is correct or incorrect.</li>
+                <li>Select an answer for every question. Unanswered questions will be scored as incorrect</li>
+                <li>Click on the <strong>Submit</strong> button at the bottom of the page to have your answers graded.</li>
+                <li>This is a timed quiz designed to help you self-assess your comprehension of the information presented 
+                    on the topics covered in the module. No data will be collected on the website regarding your responses or how many times you take the quiz.</li>
+            </ol>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
