@@ -164,54 +164,6 @@ function startQuiz() {
     };
 }
 
-//Declare a result function to show the result of the quiz when it has been completed
-function showResult(){
-    //Hide the quiz elements
-    const quizBox = document.getElementById('quiz');
-    quizBox.style.display = 'none';
-    questionList.style.display = 'none';
-    choices.forEach(option => option.style.display = 'none');
-    nextButton.style.display = 'none';
-    timer.style.display = 'none';
-
-    //Display the result box
-    resultBox.style.display = 'flex';
-
-    //display the result info based on user score
-    
-    const scoreText = document.getElementById('scoreText');
-    //creaate a variable that store the result info
-    let scoreInfo;
-    if(score === MAXIMUM_QUESTION){
-        scoreInfo = `<p>🤗😆Perfect! You got all questions right. Well done!</p>`;
-    } else if(score > 6){
-        scoreInfo  = `<p>🥳Congratulations! You got ${score} out of ${MAXIMUM_QUESTION} questions.</p>`;
-    } else if(score > 3){
-        scoreInfo  = `<p>👍Nice! You got ${score} out of ${MAXIMUM_QUESTION} questions.</p>`;
-    } else {
-        scoreInfo  = `<p>😐Sadly, you got ${score} out of ${MAXIMUM_QUESTION} questions. Better luck next time!</p>`;
-    };
-    scoreText.innerHTML = scoreInfo;
-
-    //Display retry and exit buttons
-    const resultButtons = document.getElementById('resultButton');
-    resultButtons.innerHTML = `<button onclick="retryQuiz()" class="btn">Retry</button>`;
-    resultButtons.innerHTML += `<button onclick="exitQuiz()" class="btn">Exit</button>`;
-
-    //stop timer
-    clearTimeout(stopTimer);
-}
-
-function retryQuiz(){
-    //Reload the page to restart the quiz
-    window.location.reload();
-}
-
-function exitQuiz(){
-    //Redirect page to the index.html page
-    window.location.assign('/index.html');
-}
-
 function getRandomQuestionIndex() {
     return Math.floor(Math.random() * availableQuestion.length);
 }
@@ -309,3 +261,51 @@ function handleNextButtonClick() {
 }
 
 startQuiz();
+
+//Declare a result function to show the result of the quiz when it has been completed
+function showResult(){
+    //Hide the quiz elements
+    const quizBox = document.getElementById('quiz');
+    quizBox.style.display = 'none';
+    questionList.style.display = 'none';
+    choices.forEach(option => option.style.display = 'none');
+    nextButton.style.display = 'none';
+    timer.style.display = 'none';
+
+    //Display the result box
+    resultBox.style.display = 'flex';
+
+    //display the result info based on user score
+    
+    const scoreText = document.getElementById('scoreText');
+    //creaate a variable that store the result info
+    let scoreInfo;
+    if(score === MAXIMUM_QUESTION){
+        scoreInfo = `<p>🤗😆Perfect! You got all questions right. Well done!</p>`;
+    } else if(score > 6){
+        scoreInfo  = `<p>🥳Congratulations! You got ${score} out of ${MAXIMUM_QUESTION} questions.</p>`;
+    } else if(score > 3){
+        scoreInfo  = `<p>👍Nice! You got ${score} out of ${MAXIMUM_QUESTION} questions.</p>`;
+    } else {
+        scoreInfo  = `<p>😐Sadly, you got ${score} out of ${MAXIMUM_QUESTION} questions. Better luck next time!</p>`;
+    };
+    scoreText.innerHTML = scoreInfo;
+
+    //Display retry and exit buttons
+    const resultButtons = document.getElementById('resultButton');
+    resultButtons.innerHTML = `<button onclick="retryQuiz()" class="btn">Retry</button>`;
+    resultButtons.innerHTML += `<button onclick="exitQuiz()" class="btn">Exit</button>`;
+
+    //stop timer
+    clearTimeout(stopTimer);
+}
+
+function retryQuiz(){
+    //Reload the page to restart the quiz
+    window.location.reload();
+}
+
+function exitQuiz(){
+    //Redirect page to the index.html page
+    window.location.assign('/../html/index.html');
+}

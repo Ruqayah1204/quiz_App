@@ -9,7 +9,7 @@
     font-family: 'Open Sans', sans-serif;
 }
 body {
-    background-image: url(./assets/bcgImage.jpg); 
+    background-image: url(../assets/bcgImage.jpg); 
     background-size:cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
