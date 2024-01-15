@@ -31,3 +31,9 @@ Upon completion of the quiz, users are directed to the result page. Here, a cond
 While developing this Quiz Application, overcoming challenges and conducting extensive research were integral to achieving its current functionality. The journey involved mastering the intricacies of modal design, real-time functionality, conditional messaging and others.
 
 A desired feature yet to be implemented involves introducing subtle animations as each questions is being displayed, enhancing user engagement. Although challenges were encountered during the initial attempts, upcoming updates may delve into exploring solutions to seamlessly integrate animations, aiming for a more dynamic user experience.
+
+### Access to the live Demo
+Here is the link to the site:
+[Quiz Application Website](https://quiz-app-git-master-ruqayah1204s-projects.vercel.app/)
+
+
