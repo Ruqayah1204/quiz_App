@@ -81,7 +81,6 @@ ul li > a:hover{
     background-color: rgba(14, 14, 158, 0.6);
     /* margin-top: 4rem; */
     padding: 10rem 4rem;
-    /* width: 100vw; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -160,13 +159,10 @@ img {
     header {
         padding: 1rem;
         border-bottom: 1px solid white;
-        /* display: flex;
-        justify-content:space-between;
-        align-items: center; */
     }
     .header{
         color: #fff;
-        font-size: 4rem;
+        font-size: 3rem;
     }
     header nav {
         display: flex;
@@ -182,7 +178,7 @@ img {
         background-color: transparent;
         padding: 1rem 2rem;
         border: 1px solid #fff;
-        margin-left: 5rem;
+        margin-left: 2rem;
         transition: 0.5s;
     }
     .navBtn:hover{
@@ -201,22 +197,22 @@ img {
         align-items: space-between;
     }
     .intro{
-        width: 450px;
+        width: 300px;
         text-align: center;
     }
     .intro h2 {
-        font-size: 4rem;
+        font-size: 2.8rem;
         margin-bottom: 2rem;
     }
     .intro p{
-        font-size: 1.6rem;
+        font-size: 1.5rem;
         padding: 1rem;
         border-left: none;
         margin-bottom: 2rem;
     }
     .introImg{
-        width: 470px;
-        height: 500px;
+        width: 320px;
+        height: 350px;
         margin-bottom: 5rem;
     }
     .introImg img {
@@ -227,7 +223,7 @@ img {
         text-decoration: none;
         background-color: transparent;
         color: #fff;
-        padding: 1.5rem 7rem;
+        padding: 1.2rem 3rem;
         border: 1px solid #fff;
         font-size: 1.4rem;
         transition: 0.5s;
@@ -241,5 +237,20 @@ img {
     .instructionBtn{
         display:inline-block;
         margin-top: 3rem;
+    }
+
+    .modalContent{
+        background-color: #00f;
+        width: 85%;
+    }
+    .modalContent h1{
+        font-size: 1.3rem;
+        line-height: 3rem;
+        padding-top: 0.7rem;
+    }
+    .modalContent ol > li{
+        margin-left: 1.5rem;
+        font-size: 1.3rem;
+        padding: 1rem;
     }
 }
